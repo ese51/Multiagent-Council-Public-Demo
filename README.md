@@ -1,5 +1,7 @@
 # Multiagent Council Public Demo
 
+![Multiagent Council banner](<assets/MultiAgent Council.png>)
+
 `Multiagent Council Public Demo` is a generic, public-facing demonstration of a council-style review system for written artifacts.
 
 You give the system a structured review packet, it routes the artifact through distinct reviewer lenses, and it saves a structured review output in Markdown.
