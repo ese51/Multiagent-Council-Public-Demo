@@ -1,4 +1,7 @@
-# Hive Nova Council Review Output
+# Council Review Output
+
+> Demo mode: This output was generated from bundled deterministic mock reviewer responses.
+> No live API call was made.
 
 ## 1. Executive Summary
 - overall judgment: The message is clear enough to understand, but not yet sharp enough to stand out.
@@ -127,4 +130,3 @@ revise
 
 ## 9. Suggested Next Draft Focus
 Sharpen the buyer definition and rewrite the opening around one precise pain, one alternative, and one clear outcome.
-

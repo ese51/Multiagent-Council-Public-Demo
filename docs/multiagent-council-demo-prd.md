@@ -1,8 +1,8 @@
-# PRD: Hive Nova Council
+# PRD: Multiagent Council Demo
 
 ## Executive Summary
 
-Hive Nova Council is a structured review engine for written artifacts. It runs one artifact through distinct council lenses and returns actionable critique in a fixed format.
+Multiagent Council is a structured review demo for written artifacts. It runs one artifact through distinct council lenses and returns actionable critique in a fixed format.
 
 V1 exists to do one job well: review artifacts with clear, non-generic feedback that helps the next draft improve. The product is not a chatbot, not an autonomous decision-maker, and not a broad AI platform.
 
@@ -11,8 +11,8 @@ The first version should be simple enough to run immediately from the CLI.
 ## Contract Authority
 
 The authoritative contract documents are:
-- **`docs/COUNCIL_REVIEW_PACKET_TEMPLATE.md`** — packet field requirements, allowed values, and rejection rules
-- **`docs/COUNCIL_OUTPUT_SCHEMA.md`** — output section requirements, field requirements, ordering rules, and rejection criteria
+  - **`docs/COUNCIL_REVIEW_PACKET_TEMPLATE.md`** — packet field requirements, allowed values, and rejection rules
+  - **`docs/COUNCIL_OUTPUT_SCHEMA.md`** — output section requirements, field requirements, ordering rules, and rejection criteria
 
 These documents are the enforcement source of truth. The PRD defines scope, positioning, and quality criteria. If any rule appears in both this document and a contract document, the contract document governs.
 

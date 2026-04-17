@@ -20,7 +20,7 @@ class DebateTopic:
 
 
 TAG_LABELS = {
-    "sharp_positioning": "The differentiation is clear enough to separate Hive Nova Council from ordinary single-model prompting.",
+    "sharp_positioning": "The differentiation is clear enough to separate the council from ordinary single-model prompting.",
     "strict_contract": "The packet and output contracts are rigid enough to keep the first build from drifting.",
     "runner_precision": "The runner behavior is explicit enough to implement without inventing missing rules.",
     "prd_first": "PRDs are correctly treated as the primary proving ground for the first build.",

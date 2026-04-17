@@ -1,8 +1,8 @@
 # Multiagent Council Public Demo
 
-`Multiagent Council Public Demo` is a public-safe demonstration repo for `Hive Nova Council`.
+`Multiagent Council Public Demo` is a generic, public-facing demonstration of a council-style review system for written artifacts.
 
-Hive Nova Council is a council-style review engine for written artifacts. You give it a structured review packet, it routes the artifact through distinct member lenses, and it saves a structured review output in Markdown.
+You give the system a structured review packet, it routes the artifact through distinct reviewer lenses, and it saves a structured review output in Markdown.
 
 This demo keeps the core runnable council code and the key docs, but trims away internal notes, messy historical artifacts, and business-specific examples.
 
@@ -41,7 +41,19 @@ cp .env.example .env
 
 Then add your real `OPENAI_API_KEY` to `.env`.
 
-## Run A Sample Review
+## Run In Demo Mode
+
+This path is deterministic and does not call the real API:
+
+```bash
+python3 app/main.py --demo --input examples/packets/demo_packet_product_requirements.yaml
+```
+
+You can also omit `--demo` and the runner will automatically fall back to demo mode if `OPENAI_API_KEY` is missing.
+
+## Run In Real API Mode
+
+With `OPENAI_API_KEY` present in your local `.env`, run:
 
 ```bash
 python3 app/main.py --input examples/packets/demo_packet_product_requirements.yaml
@@ -57,7 +69,7 @@ python3 -m pytest tests/ -v
 
 ## Key Docs
 
-- [Hive Nova Council PRD](docs/hive-nova-council-prd.md)
+- [Demo System PRD](docs/multiagent-council-demo-prd.md)
 - [Review Packet Template](docs/COUNCIL_REVIEW_PACKET_TEMPLATE.md)
 - [Output Schema](docs/COUNCIL_OUTPUT_SCHEMA.md)
 - [Council Member Definitions](docs/COUNCIL_MEMBER_DEFINITIONS.md)

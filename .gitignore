@@ -26,4 +26,4 @@ secrets*
 token*
 tokens*
 auth*
-
+examples/packets/*output*.md

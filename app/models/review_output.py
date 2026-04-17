@@ -80,9 +80,13 @@ class CouncilReviewOutput:
             if not items:
                 raise ValueError(f"CouncilReviewOutput.{field_name} must contain at least one item.")
 
-    def to_markdown(self) -> str:
+    def to_markdown(self, *, demo_mode: bool = False) -> str:
         lines: list[str] = []
-        lines.append("# Hive Nova Council Review Output")
+        lines.append("# Council Review Output")
+        if demo_mode:
+            lines.append("")
+            lines.append("> Demo mode: This output was generated from bundled deterministic mock reviewer responses.")
+            lines.append("> No live API call was made.")
         lines.append("")
         lines.append("## 1. Executive Summary")
         lines.append(f"- overall judgment: {self.overall_judgment}")

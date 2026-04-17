@@ -1,4 +1,4 @@
-# Hive Nova Council Output Schema
+# Council Output Schema
 
 This schema is the fixed V1 output contract.
 All nine sections must be present in every saved review.

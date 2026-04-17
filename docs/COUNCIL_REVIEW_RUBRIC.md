@@ -1,4 +1,4 @@
-# Hive Nova Council Review Rubric
+# Council Review Rubric
 
 Use this rubric before the build and during reviews. It is the baseline for comparing feedback across council members and across artifacts.
 

@@ -54,9 +54,6 @@ class CouncilRunner:
     ) -> DebateHighlight:
         review_by_name = {result.review.member_name: result.review for result in member_results}
         claims_text = self._build_claims_text(topic.participants, review_by_name)
-        print(f"debate topic: {topic.topic}")
-        print(f"participants: {', '.join(topic.participants[:3])}")
-        print(f"claims_text:\n{claims_text}")
         exchange: list[DebateTurn] = []
 
         for participant_name in topic.participants[:3]:

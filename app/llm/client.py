@@ -5,12 +5,25 @@ import os
 from dotenv import load_dotenv
 from openai import OpenAI
 
+from llm.demo_client import call_demo_llm
+
 
 MODEL_NAME = "gpt-4.1"
 TEMPERATURE = 0.7
+_DEMO_MODE = False
 
 
 load_dotenv()
+
+
+def has_api_key() -> bool:
+    return bool(os.getenv("OPENAI_API_KEY"))
+
+
+def configure_client_mode(*, force_demo: bool = False) -> bool:
+    global _DEMO_MODE
+    _DEMO_MODE = force_demo or not has_api_key()
+    return _DEMO_MODE
 
 
 def _build_client() -> OpenAI:
@@ -23,6 +36,8 @@ def _build_client() -> OpenAI:
 
 
 def call_llm(system_prompt: str, user_prompt: str) -> str:
+    if _DEMO_MODE or not has_api_key():
+        return call_demo_llm(system_prompt, user_prompt)
     client = _build_client()
     response = client.chat.completions.create(
         model=MODEL_NAME,

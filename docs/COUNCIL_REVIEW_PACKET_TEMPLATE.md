@@ -1,4 +1,4 @@
-# Hive Nova Council Review Packet Template
+# Council Review Packet Template
 
 This template is the fixed V1 packet contract.
 Use these exact section names in this exact order.

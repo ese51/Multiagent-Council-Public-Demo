@@ -26,7 +26,7 @@ def _format_anti_patterns(anti_patterns: tuple[str, ...]) -> str:
 
 def build_member_prompts(member: CouncilMember, packet: ReviewPacket) -> tuple[str, str]:
     system_prompt = (
-        "You are simulating one Hive Nova Council member only.\n"
+        "You are simulating one council member only.\n"
         f"Member name: {member.name}\n"
         f"Lens: {member.lens}\n"
         f"Priorities: {', '.join(member.priorities)}\n\n"

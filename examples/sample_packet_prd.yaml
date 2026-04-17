@@ -1,9 +1,9 @@
-artifact_title: Hive Nova Council PRD
+artifact_title: Multiagent Council Demo PRD
 artifact_type: PRD
-goal: Validate that the finalized Hive Nova Council spec is tight enough to implement without drift.
+goal: Validate that the finalized multi-agent council spec is tight enough to implement without drift.
 intended_audience: Founder and product builder
 context: |
-  This review packet is part of the public demo repo for Hive Nova Council.
+  This review packet is part of the public demo repo for Multiagent Council Public Demo.
   It is safe to publish and uses only product-definition material already included in this repository.
   PRDs are the primary proving ground for the first build.
 specific_questions:
@@ -17,11 +17,11 @@ constraints:
 requested_review_mode: full council
 selected_members: []
 artifact_text: |
-  # PRD: Hive Nova Council
+  # PRD: Multiagent Council Demo
 
   ## Executive Summary
 
-  Hive Nova Council is a structured review engine for written artifacts. It runs one artifact through distinct council lenses and returns actionable critique in a fixed format.
+  Multiagent Council is a structured review demo for written artifacts. It runs one artifact through distinct council lenses and returns actionable critique in a fixed format.
 
   V1 exists to do one job well: review artifacts with clear, non-generic feedback that helps the next draft improve. The product is not a chatbot, not an autonomous decision-maker, and not a broad AI platform.
 

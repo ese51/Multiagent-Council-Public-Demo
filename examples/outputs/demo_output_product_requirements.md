@@ -1,4 +1,7 @@
-# Hive Nova Council Review Output
+# Council Review Output
+
+> Demo mode: This output was generated from bundled deterministic mock reviewer responses.
+> No live API call was made.
 
 ## 1. Executive Summary
 - overall judgment: The artifact is promising, but it still needs a tighter wedge and a more disciplined V1 boundary before it is ready to build from.
@@ -238,4 +241,3 @@ revise
 
 ## 9. Suggested Next Draft Focus
 Tighten the first-user definition, make the replacement workflow explicit, and raise the quality bar for what counts as a successful weekly update.
-

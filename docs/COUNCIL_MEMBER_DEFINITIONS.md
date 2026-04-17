@@ -1,4 +1,4 @@
-# Hive Nova Council Member Definitions
+# Council Member Definitions
 
 **Canonical source of truth for all council member review lenses.**
 

@@ -1,5 +1,5 @@
 """
-Contract and validation tests for Hive Nova Council V1.
+Contract and validation tests for the public multi-agent council demo.
 
 Covers:
   1. Packet validation (ReviewPacket.validate + YAML parsing)
@@ -361,7 +361,7 @@ class TestPacketYamlParsing:
         assert packet.artifact_type == "PRD"
         assert packet.requested_review_mode == "full council"
         assert len(packet.artifact_text) > 200
-        assert packet.artifact_text.startswith("# PRD: Hive Nova Council")
+        assert packet.artifact_text.startswith("# PRD: Multiagent Council Demo")
 
 
 # ---------------------------------------------------------------------------
