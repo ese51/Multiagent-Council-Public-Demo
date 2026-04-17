@@ -1,0 +1,37 @@
+artifact_title: Team Update Digest PRD
+artifact_type: PRD
+goal: Run a narrower positioning-and-clarity review on the same demo concept.
+intended_audience: Product builders comparing message clarity and trust signals
+context: |
+  This packet demonstrates subset review mode in the public demo.
+  It uses a short, generic PRD with no private business material.
+specific_questions:
+  - Is the positioning sharp enough for a first public launch?
+  - Which claims would reduce trust if left vague?
+  - What should be cut from the narrative?
+constraints:
+  - Keep the message simple.
+  - Prioritize clarity and credibility.
+  - Avoid broad market language.
+requested_review_mode: subset review
+selected_members:
+  - April Dunford
+  - Kara Swisher
+  - Marques Brownlee
+artifact_text: |
+  # PRD: Team Update Digest
+
+  ## Positioning Draft
+
+  Team Update Digest helps small teams turn messy project notes into a clear weekly update without spending half a day stitching everything together.
+
+  It is meant for fast-moving teams that want a lightweight workflow, not another heavy project management system. The first version focuses on producing one good weekly update draft from pasted notes, then letting a human editor refine it.
+
+  ## Draft Value Claim
+
+  Instead of chasing updates across chat threads and scattered docs, a team lead can paste source notes into one place and receive a structured summary covering progress, blockers, risks, and next priorities.
+
+  ## Launch Message
+
+  The product is for small teams that need better weekly communication but do not want to maintain a complex reporting ritual.
+

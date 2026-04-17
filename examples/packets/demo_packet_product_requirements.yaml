@@ -1,0 +1,68 @@
+artifact_title: Team Update Digest PRD
+artifact_type: PRD
+goal: Evaluate whether this lightweight product concept is scoped tightly enough for a first release.
+intended_audience: Product builders and operators reviewing an early-stage concept
+context: |
+  This is a public-safe demo packet for Hive Nova Council.
+  The artifact below is intentionally generic and contains no private business strategy.
+  The goal is to demonstrate packet structure and council behavior, not to represent a live company plan.
+specific_questions:
+  - Is the target user specific enough for a first release?
+  - What feels overbuilt for V1?
+  - Which parts of the concept create real value versus workflow overhead?
+constraints:
+  - Keep V1 simple and operationally light.
+  - Avoid unnecessary automation in the first release.
+  - Prefer clarity over breadth.
+requested_review_mode: full council
+selected_members: []
+artifact_text: |
+  # PRD: Team Update Digest
+
+  ## Executive Summary
+
+  Team Update Digest is a lightweight tool that turns scattered project notes into one short weekly summary for a small team.
+
+  The product is designed for tiny teams that already write notes in several places but struggle to turn those notes into a clear weekly update. The first version should stay narrow: gather text manually from one or two sources, generate a draft summary, and let a human editor approve it before sending.
+
+  ## Target User
+
+  The primary user is a founder, operator, or project lead at a small team of 3 to 15 people. They do not need another knowledge base. They need a faster way to produce a weekly update that explains what changed, what is blocked, and what needs attention.
+
+  ## Problem
+
+  Small teams often have updates spread across chat, notes, docs, and task comments. Turning that into one useful weekly summary is repetitive and easy to postpone. The result is either no update at all or a vague update that does not help the team align.
+
+  ## Proposed Solution
+
+  The product accepts pasted project notes and turns them into a structured weekly draft with:
+  - what shipped
+  - what changed
+  - blockers
+  - risks
+  - next priorities
+
+  A human reviews the draft before sharing it.
+
+  ## V1 Scope
+
+  V1 includes:
+  - paste-in text input
+  - one summary draft per run
+  - editable output before sending
+  - simple export to Markdown or email copy
+
+  V1 does not include:
+  - automatic integrations
+  - team analytics dashboards
+  - historical trend analysis
+  - multiple templates per team
+
+  ## Risks
+
+  The concept may be too lightweight if the output feels like a generic summary instead of a meaningful management artifact. The target user may also be too broad if both founders and project managers want very different summaries.
+
+  ## Success Criteria
+
+  The first release succeeds if a small team can create a useful weekly update in less than 10 minutes and feels the draft is materially better than starting from a blank page.
+

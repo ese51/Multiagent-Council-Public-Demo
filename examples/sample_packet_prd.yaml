@@ -1,0 +1,82 @@
+artifact_title: Hive Nova Council PRD
+artifact_type: PRD
+goal: Validate that the finalized Hive Nova Council spec is tight enough to implement without drift.
+intended_audience: Founder and product builder
+context: |
+  This review packet is part of the public demo repo for Hive Nova Council.
+  It is safe to publish and uses only product-definition material already included in this repository.
+  PRDs are the primary proving ground for the first build.
+specific_questions:
+  - Is the spec strict enough to implement without drift?
+  - Are the packet and output contracts rigid enough for a deterministic runner?
+  - What should still be cut before coding?
+constraints:
+  - Keep V1 narrow.
+  - No external integrations.
+  - No flexible interpretation of the contracts.
+requested_review_mode: full council
+selected_members: []
+artifact_text: |
+  # PRD: Hive Nova Council
+
+  ## Executive Summary
+
+  Hive Nova Council is a structured review engine for written artifacts. It runs one artifact through distinct council lenses and returns actionable critique in a fixed format.
+
+  V1 exists to do one job well: review artifacts with clear, non-generic feedback that helps the next draft improve. The product is not a chatbot, not an autonomous decision-maker, and not a broad AI platform.
+
+  The first version should be simple enough to run immediately from the CLI.
+
+  ## Contract Authority
+
+  The authoritative contract documents are:
+  - `docs/COUNCIL_REVIEW_PACKET_TEMPLATE.md`
+  - `docs/COUNCIL_OUTPUT_SCHEMA.md`
+
+  These documents are the enforcement source of truth. The PRD defines scope, positioning, and quality criteria. If any rule appears in both this document and a contract document, the contract document governs.
+
+  ## Positioning
+
+  ### Target user
+  - founder
+  - product builder
+  - strategist
+  - writer working on high-leverage drafts
+
+  ### Primary use case
+  Review an artifact before shipping or building it, surface weak assumptions and scope problems, and produce a revision-ready output.
+
+  ## V1 Scope
+
+  ### Allowed artifact types (exact strings, V1 only)
+  - `PRD`
+
+  ### Allowed review modes (exact strings, V1 only)
+  - `full council`
+  - `subset review`
+  - `single-seat review`
+
+  V1 includes:
+  - fixed council member definitions
+  - fixed review rubric
+  - review packet input format
+  - structured council output format
+  - three review modes: full council, subset review, single-seat review
+  - CLI runner with packet validation and structured file output
+
+  V1 does not include:
+  - large UI systems
+  - automatic artifact classification
+  - automatic reviewer recommendation
+  - scoring dashboards
+  - weighted reviewers
+  - review history analysis
+  - multiple domain-specific councils
+
+  ## Orchestration Flow
+
+  1. Prepare the packet and validate it against the packet contract.
+  2. Run each selected member through their own lens.
+  3. Identify meaningful disagreement topics and run short debate exchanges.
+  4. Synthesize the final review output in the fixed schema.
+  5. Save one deterministic Markdown output file.
